@@ -6,6 +6,10 @@ Exercise with Angular stable (v4.4.1)
 
 ### Install ng-cli
 ```bash
+$ nvm install stable
+$ nvm list
+$ nvm use stable
+
 $ npm install -g @angular/cli
 $ ng new ts02
   create ts02/README.md (1095 bytes)
@@ -44,6 +48,39 @@ Project 'ts02' successfully created.
 $ cd ts02/
 $ ng serve --open
 ** NG Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
+
+$ tree -I 'node_modules'
+.
+├── README.md
+├── e2e
+│   ├── app.e2e-spec.ts
+│   ├── app.po.ts
+│   └── tsconfig.e2e.json
+├── karma.conf.js
+├── package.json
+├── protractor.conf.js
+├── src
+│   ├── app
+│   │   ├── app.component.css
+│   │   ├── app.component.html
+│   │   ├── app.component.spec.ts
+│   │   ├── app.component.ts
+│   │   └── app.module.ts
+│   ├── assets
+│   ├── environments
+│   │   ├── environment.prod.ts
+│   │   └── environment.ts
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── main.ts
+│   ├── polyfills.ts
+│   ├── styles.css
+│   ├── test.ts
+│   ├── tsconfig.app.json
+│   ├── tsconfig.spec.json
+│   └── typings.d.ts
+├── tsconfig.json
+└── tslint.json
 ```
 Using the `--open` (or just `-o`) option will automatically open your browser on [http://localhost:4200/](http://localhost:4200/).
 
