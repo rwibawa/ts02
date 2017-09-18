@@ -10,6 +10,15 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/rwibawa/ts02.git"
+  },
+  "author": "Ryan Wibawa <ryan.wibawa@gmail.com> (https://github.com/rwibawa)",
+  "bugs": {
+    "url": "https://github.com/rwibawa/ts02/issues"
+  },
+  "homepage": "https://github.com/rwibawa/ts02#readme",
   "private": true,
   "dependencies": {
     "@angular/animations": "^4.2.4",
