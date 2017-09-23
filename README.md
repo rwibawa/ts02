@@ -114,9 +114,42 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## 3. Tutorial
 [Angular Tutorial](https://angular.io/tutorial)
+The entry point is `src/app/app.module.ts` that starts `src/app/app.component.ts`.
 
-### build the app
+### build the app a deployment
 ```bash
 $ ng build -prod
 $ ls -lah dist/
+```
+
+### add libraries
+```bash
+  $ npm search angular-in-memory-web-api
+  $ npm install angular-in-memory-web-api --save-dev
+```
+
+### run app with different port
+```bash
+$ ng serve --port:8098
+```
+To change default port, add this into `.angular-cli.json`:
+```json
+"defaults": {
+  "serve": {
+    "port": 8080
+  },
+}
+```
+
+### add a new service
+```bash
+$ ng generate service hero-search
+  create src/app/hero-search.service.spec.ts (399 bytes)
+  create src/app/hero-search.service.ts (116 bytes)
+$ ng generate component hero-search
+  create src/app/hero-search/hero-search.component.css (0 bytes)
+  create src/app/hero-search/hero-search.component.html (30 bytes)
+  create src/app/hero-search/hero-search.component.spec.ts (657 bytes)
+  create src/app/hero-search/hero-search.component.ts (288 bytes)
+  update src/app/app.module.ts (1264 bytes)
 ```
